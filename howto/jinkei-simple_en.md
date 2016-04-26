@@ -9,4 +9,4 @@ Architecture
 - Enter the information in accordance with the setup wizard.
 
 ## Detail informations
-https://ja.amimoto-ami.com/support/how-to-use/cloudformation-jin-kei/
+https://amimoto-ami.com/support/how-to-use/cloudformation-jin-kei/
