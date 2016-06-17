@@ -226,26 +226,13 @@ note: you can set AMIMOTO AMI's IP Address (xxx.xxxx.xxx.xxx/0) to [Source].
 - Click [Save]
 
 
-### Migrate AMIMOTO's DB to RDS 
+### Connect RDS as AMIMOTO's DB
 #### SSH to AMIMOTO instance
 Connect to your AMIMOTO instance through SSH
 ```
 $ ssh -i /path/to/pem/{PEMFILENAME}.pem ec2-user@{INSTANCE_IP}
 ```
-#### Export DB information using WP-CLI
-```
-$ cd /var/www/vhosts/{INSTANCE_ID}
-$ wp db export /tmp/dump.sql
-```
-#### Import the exported DB information to RDS 
-Paste value which you copied before in Values of [Settings] column section.
 
-```
-$ mysql -h {RDS_ENDPOINT} -u {Master Username} -p {Database Name} < /tmp/dump.sql
-```
-Note: input {Master Password} when he asks password
-
-### Replace DB connection from AMIMOTO's inner DB to RDS
 #### Edit wp-config.php
 ```
 $ cd /var/www/vhosts/{INSTANCE_ID}
