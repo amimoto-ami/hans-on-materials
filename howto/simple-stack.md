@@ -332,10 +332,3 @@ $ sudo /opt/local/provision
 
 ##### CloudFrontのディストリビューションID確認方法
 ![CloudFrontのディストリビューションID確認方法](./img/cf_distrib.png)
-
-##### プレビューの更新を反映するためのプラグイン
-```
-$ cd /var/www/vhost/{INSTANCE_ID}/wp-content
-$ mkdir mu-plugins && cd mu-plugins
-$ wget wget https://gist.githubusercontent.com/wokamoto/ecfd3a7ea9ef80ea1628/raw/02e4e011597c0969f0ff4dec48de539a89b96e4a/cloudfront-preview-fix.php
-```
